@@ -1,0 +1,77 @@
+ <!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Link css-->
+    <link rel="stylesheet" href="style.css" />
+    <!--Link Bootstrep-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="/img/app-de-clima.png" type="image/x-icon" />
+    <!--Roboto Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Poppins Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.css"
+  rel="stylesheet"
+/>
+    <title>Temp</title>
+  </head>
+  <body>
+    <div class="container">
+      <!--beginning of Div form-->
+      <div class="seach">
+          <input id="city-input" type="text" placeholder="Nome da sua cidade" />
+          <button class="submit" >
+            <img src="img/lupa-arredondada.png" alt="Icon de lupa para busca" />
+          </button>
+      </div>
+      <!--End of Div form-->
+      <div class="contentTemp">
+        <!--beginning of Div Text-->
+        <div class="text">
+          Essa é a temperatura em <span class="nameCity">Cidade</span>
+        </div>
+        <div class="textTemp">
+          <div class="showTemp">
+            <span class="minTemp"><img src="img/frio.png" alt="icone de temperatura fria"> 25C</span> /<span class="maxTemp"> <img src="img/superaquecimento.png" alt="icone de temperatura quente">28C</span>
+          </div>
+          <div class="showFellsLike">
+            <span class="fellsLLike"><img src="img/temperaturas.png" alt="icone de sensação termica"> 29.83</span> /<span class="wind"> <img src="img/ventoso.png" alt="icone de vento"> 2.57</span>
+          </div>
+        </div>
+        <!--End of Div Text-->
+        <!--beginning of Div Image-->
+        <div class="image">
+          <img class="imageChange" src="img/sol.png" alt="" />
+        </div>
+        <!--End of Div Image-->
+      <span class="text changeText"></span>
+      <span class="restText"></span>
+    </div>
+    <!--Links JS-->
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.3.0/mdb.min.js"
+></script>
+  </body>
+</html>
